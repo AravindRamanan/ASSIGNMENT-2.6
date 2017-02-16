@@ -1,3 +1,38 @@
+1)
+import java.util.*;
+public class Main {
+public static void main(String args[])
+{
+	
+	Scanner sc=new Scanner(System.in);
+	int n1=sc.nextInt();					//reading the first number from user
+	int n2=sc.nextInt();					//reading the second number from user
+	ArrayList<Integer> al=new ArrayList<>();
+	ArrayList<Integer> al1=new ArrayList<>();
+	for(int i=n1;i<=n2;i++)
+	{
+		if(i%2!=0)					//checking if the number is odd
+		{
+			al.add(i);
+		}
+		else						//if number is not odd,then it is even
+		{
+			al1.add(i);
+		}
+	}
+	System.out.println("odd numbers are ");
+	for(int k:al)
+		System.out.println(k);				//printing the odd numbers
+	System.out.println("even numbers are ");
+	for(int l:al1)
+		System.out.println(l);				//printing the even numbers
+
+}
+}
+
+
+
+
 2)
 
 
@@ -7,12 +42,12 @@ public static void main(String args[])
 {
 	
 	Scanner sc=new Scanner(System.in);
-	int n=sc.nextInt();                           //reading the number from user
-	int k=0;	                                    //initializing the variable k with 0
+	int n=sc.nextInt();                           		//reading the number from user
+	int k=0;	                                   	//initializing the variable k with 0
 	for(int i=1;i<=10;i++)
 	{
 		k=i*n;
-		System.out.println(i+"*"+n+"="+k);          //printing the table of the number
+		System.out.println(i+"*"+n+"="+k);         	//printing the table of the number
 	}	
 	
 }
